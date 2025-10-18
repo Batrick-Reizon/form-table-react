@@ -15,9 +15,9 @@ function Table({ tableData, handleEdit, handleDelete }) {
                     <tr key={index}>
                         <td className="border border-black p-2 text-center">{data.name}</td>
                         <td className="border border-black p-2 text-center">{data.email}</td>
-                        <td className="border border-black p-2 text-center">
-                            <button className="mx-3 bg-blue-600 text-white py-1 px-3 rounded" onClick={() => handleEdit(index)}>Edit</button>
-                            <button className="mx-3 bg-red-600 text-white py-1 px-3 rounded" onClick={() => handleDelete(index)}>Delete</button>
+                        <td className="border border-black flex flex-wrap justify-center items-center gap-1 sm:gap-3 p-2">
+                            <button className="bg-blue-600 text-white text-xs sm:text-base px-1 py-1 sm:py-1 sm:px-3 rounded" onClick={() => handleEdit(index)}>Edit</button>
+                            <button className="bg-red-600 text-white text-xs sm:text-base px-1 py-1 sm:py-1 sm:px-3 rounded" onClick={() => handleDelete(index)}>Delete</button>
                         </td>
                     </tr>
                 )
