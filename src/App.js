@@ -23,6 +23,7 @@ function App() {
             tableData[editIndex] = formData
             settableData(tableData)
             setformData(initialformData)
+            seteditIndex(null)
         }
         console.log("Form Submitted", formData)
     }
